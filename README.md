@@ -15,8 +15,7 @@
 
 ## 课后练习
 
-- [x] [课程概览与shell](./course-shell/course-shell.md)  --20240529
+- [x] [课程概览与Shell](./course-shell/course-shell.md)  --20240529
+- [x] [Shell工具与脚本](./shell-tools/shell-tools.md) --20240604
 - [ ] 
-
-
 

@@ -7,6 +7,8 @@ $ echo $SHELL
 /bin/bash
 ```
 
+
+
 2. 在 ``/tmp`` 下新建一个名为 ``missing`` 的文件夹。
 
 ```sh
@@ -15,6 +17,8 @@ $ mkdir missing
 
 # 为了方便记录，将course-shell文件夹视作/tmp文件夹，下同。
 ```
+
+
 
 3. 用 ``man`` 查看程序 ``touch`` 的使用手册。
 
@@ -39,6 +43,8 @@ DESCRIPTION
 ...
 ```
 
+ 
+
 4. 用 ``touch`` 在 ``missing``的文件夹下新建一个叫 ``semester`` 的文件。
 
 ```sh
@@ -47,6 +53,8 @@ $ touch semester
 $ ls
 semester
 ```
+
+
 
 5. 将以下内容一行一行地写入 ``semester`` 文件：
 
@@ -65,6 +73,8 @@ $ cat semester
 curl --head --silent https:://missing.csail.mit.edu
 ```
 
+
+
 6. 尝试执行这个文件。
 
 ```sh
@@ -75,6 +85,8 @@ $ ls  -l
 
 # 无可执行权限
 ```
+
+
 
 7. 查看 ``chmod`` 手册。
 
@@ -100,6 +112,8 @@ DESCRIPTION
 ...
 ```
 
+
+
 8. 使用 ``chmod`` 命令改变权限，使 ``./semester`` 能够成功执行，不要使用 ``sh semester`` 来执行该程序。
 
 ```sh
@@ -109,6 +123,7 @@ $ ls -l
 -rwxrwxr-x 1 shaozk shaozk 62 5月  29 23:15 semester
 $ ./semester
 ```
+
 
 9. 使用 ``|`` 和 ``>`` ，将 ``semester`` 文件输出的最后更改日期信息，写入主目录下的 ``last-modified.txt`` 的文件中。
 
@@ -121,9 +136,12 @@ $ cat last-modified.txt
 
 ```
 
+
+
 10. 写一段命令来从 ``/sys`` 中获取笔记本的电量信息，或者台式机 CPU 的温度。
 
 ```sh
-
+# 无法找到文件/sys/class/power_supply/BAT0/capacity
+# 可能是我的笔记本电脑没有电池？（插上电池经常无法开机，所以我把电池拔了）
 ```
 
